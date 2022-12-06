@@ -18,6 +18,7 @@ export const LoginInput = ({ ...rest }: MuiTextFieldProps & MuiBoxProps) => {
         label="비밀번호"
         placeholder="비밀번호는 영문 + 숫자 + 특수문자 조합입니다."
         type="password"
+        inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
         {...rest}
       />
     </Box>

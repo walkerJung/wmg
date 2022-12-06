@@ -5,11 +5,11 @@ import {
   ContainerProps as MuiContainerProps,
 } from "@mui/material";
 
-export const Container = ({}: MuiContainerProps) => {
+export const Container = ({ children, ...rest }: MuiContainerProps) => {
   return (
     <>
       <MuiCssBaseline />
-      <MuiContainer></MuiContainer>
+      <MuiContainer {...rest}>{children}</MuiContainer>
     </>
   );
 };
